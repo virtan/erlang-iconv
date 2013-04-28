@@ -1,3 +1,11 @@
+Fork changes
+============
+
+It's a fork of Vagabond's erlang-iconv with updates for new Erlang driver interface (r15).
+https://github.com/Vagabond/erlang-iconv
+Updates are mostly from mihawk (https://github.com/mihawk) with small modifications.
+It just works in new (today is 2013-04-28) Erlang environments.
+
 About
 =====
 
