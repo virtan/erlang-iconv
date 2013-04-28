@@ -369,7 +369,7 @@ DRIVER_INIT(iconvdrv)
   am_e2big        = driver_mk_atom("e2big");
   am_unknown      = driver_mk_atom("unknown");
 
-  memset(iconvdrv_driver_entry, 0, sizeof(iconvdrv_driver_entry));
+  memset(&iconvdrv_driver_entry, 0, sizeof(iconvdrv_driver_entry));
   iconvdrv_driver_entry.start        = iconvdrv_start;
   iconvdrv_driver_entry.stop         = iconvdrv_stop;
   iconvdrv_driver_entry.output       = iconvdrv_from_erlang;
