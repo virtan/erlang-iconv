@@ -87,7 +87,7 @@ typedef int ErlDrvSizeT;
 typedef int ErlDrvSSizeT;
 #endif
 
-static int driver_send_bin();
+static ErlDrvSSizeT driver_send_bin();
 
 /* atoms which are sent to erlang */
 static ErlDrvTermData am_ok;
@@ -289,7 +289,7 @@ static void iv_close(t_iconvdrv *iv, iconv_t cd)
     return;
 }
 
-static void iconvdrv_from_erlang(ErlDrvData drv_data, char *buf, ErlDrvSSizeT len)
+static void iconvdrv_from_erlang(ErlDrvData drv_data, char *buf, ErlDrvSizeT len)
 {
     t_iconvdrv *iv = (t_iconvdrv *) drv_data;
     char ignore = 0;
